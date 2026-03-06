@@ -13,6 +13,7 @@ body {
   display: flex;
   justify-content: space-around;
   height: 200px;
+  height: 100vh;
   padding-top: 30px;
 }
 
@@ -31,4 +32,25 @@ button {
   font-weight: bold;
   border-radius: 5px;
   padding: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  button {
+    font-size: 1.2rem;
+    width: 100px;
+  }
 }
